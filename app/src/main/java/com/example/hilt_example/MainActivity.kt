@@ -6,8 +6,11 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.hilt_example.bowstuff.Bow
 import com.example.hilt_example.bowstuff.LongBow
+import dagger.Module
+import dagger.hilt.DefineComponent
 import dagger.hilt.InstallIn
 import dagger.hilt.android.AndroidEntryPoint
+import dagger.hilt.internal.definecomponent.DefineComponentClasses
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -39,10 +42,6 @@ class MainActivity : AppCompatActivity() {
 }
 
 
-@InstallIn(MyApp::class)
-class MyModule {
-
-}
 
 
 
